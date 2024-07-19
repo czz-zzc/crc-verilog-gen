@@ -1,1 +1,2 @@
-[并行CRC推导过程.pdf](https://github.com/user-attachments/files/16311368/CRC.pdf)
+
+<img width="193" alt="image" src="https://github.com/user-attachments/assets/06c43703-26bd-47a6-b3fa-dfb1239972b0">
