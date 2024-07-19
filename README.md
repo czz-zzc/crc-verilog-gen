@@ -1,4 +1,4 @@
-本文以CRC16为例进行64bit并行电路实现原理的推导过程。
+以CRC16为例进行64bit并行电路实现原理的推导过程。
 CRC16(0x1B09)，生成多项式：
 
 <img width="193" alt="image" src="https://github.com/user-attachments/assets/06c43703-26bd-47a6-b3fa-dfb1239972b0">
