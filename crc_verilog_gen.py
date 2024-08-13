@@ -92,8 +92,8 @@ def crc_verilog_gen(g_coeffs,n,data_width):
     // d:  calculated data,{data_width} bits
     // ci: current crc status,{n} bits
     // co: next crc status,{n} bits
-    //------------------------------------------
-    //------------------------------------------
+    //---------------------------------------------------------------------------
+    //---------------------------------------------------------------------------
     module {module_name} (
         input [{data_width-1}:0] d,
         input [{n-1}:0] ci,
