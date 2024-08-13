@@ -1,7 +1,7 @@
 import argparse
 # This code is used to generate a verilog module for CRC calculation.
 def matrix_multiply(A, B):
-    # Get the dimensions of the matrices
+
     rows_A, cols_A = len(A), len(A[0])
     rows_B, cols_B = len(B), len(B[0])
 
@@ -21,15 +21,6 @@ def matrix_multiply(A, B):
     return result
 
 def generate_generator_matrix(g_coeffs):
-    """
-    Generate an n x n generator matrix from a given polynomial coefficients.
-
-    Parameters:
-    g_coeffs (list): Coefficients of the polynomial in descending order of powers.
-
-    Returns:
-    numpy.ndarray: Generator matrix.
-    """
 
     n =len(g_coeffs)
 
@@ -57,18 +48,6 @@ def matrix_iterate(A, n):
     
 
 def crc_verilog_gen(g_coeffs,n,data_width):
-    """
-    Generate a Verilog module for CRC calculation.
-
-    Parameters:
-    g_coeffs (list): Coefficients of the polynomial in descending order of powers.
-        for example: g_coeffs = [1,1,0,1,0] represents CRC-5 with polynomial x^5 + x^4 + x^2 + 1
-    n (int): Number of bits in the CRC.
-    data_width (int): Width of the data input.
-
-    Returns:
-    str(file): Verilog module code.
-    """
 
     # Check if the length of g_coeffs matches the expected number of parity bits
     if len(g_coeffs) != n:
@@ -149,10 +128,9 @@ def crc_verilog_gen(g_coeffs,n,data_width):
     verilog_code += """
     endmodule
     """      
-    # Generate the file name based on n and data_width
-    file_name = f"{module_name}.v"
 
     # Save the verilog_code to a file
+    file_name = f"{module_name}.v"
     with open(file_name, "w") as file:
         file.write(verilog_code)
     return verilog_code
