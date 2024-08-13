@@ -1,7 +1,6 @@
-CRC并行电路实现。
+该脚本可以生成任意CRC verilog代码，CRC多项式和并行度可配置
 
-实现原理参考：
-
+CRC并行电路实现原理参考：
 https://github.com/czz-zzc/parallel-crc16/blob/master/%E5%B9%B6%E8%A1%8CCRC%E6%8E%A8%E5%AF%BC%E8%BF%87%E7%A8%8B.pdf
 
 要运行 `crc_verilog_gen.py` 脚本并生成 Verilog 模块，请按照以下步骤操作：
